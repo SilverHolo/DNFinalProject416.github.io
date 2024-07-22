@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gross Earnings v. User Score</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="banner">
+        <h1>Do higher user ratings equal higher earnings?</h1>
+        <button onclick="location.href='index.html'">Home</button>
+    </div>
+    <label for="decadeFilter">Choose decade:</label>
+    <select id="decadeFilter">
+        <option value="all">All Decades</option>
+    </select>
+    <div class="container">
+        <div id="plot-container"></div>
+        <div id="legend-container"></div>
+        <div class="text-container">
+            <p>Hover over the dots to see income</p>
+            <p>Compares the data from Gross Earnings vs the Meta Score which shows if the User scores reflect the money the movie will make</p>
+            <ul>
+                <li>Usually people assume that the good user scores from Meta scores means that the movie will make money but that doesn't appear to be true</li>
+                <li>We can see some of the higher scores lead to high earnings but we also see some lower scores with higher earnings</li>
+                <li>We also see a cluster of movies around the 70-90% meta score of movies that did well earnings wise so higher scores don't instantly mean more as those clusters are in the lower percentages</li>
+            </ul>
+            <p>This doesn't prove that a high user rating instantly equals higher earnings</p>
+        </div>
+        <p class="hover-instruction">Hover over the dots to see more details.</p> <!-- Added sentence -->
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/page1.js"></script>
+    <div class="bottom-banner">
+        <button onclick="location.href='index.html'">Prev</button>
+        <button onclick="location.href='page2.html'">Next</button>
+    </div>
+</body>
+
+</html>

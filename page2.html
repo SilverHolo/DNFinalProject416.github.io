@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gross Earnings by Genre</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <h1>Does Genre impact Gross Earnings?</h1>
+        <button onclick="location.href='index.html'">Home</button>
+    </div>
+
+    <div class="container">
+        <div class="button-container">
+            <button onclick="drawChart('genre')">Color by Genre</button>
+            <button onclick="drawChart('imdbRating')">Color by IMDB Rating</button>
+        </div>
+        <div id="bar-container"></div>
+        <div class="text-container">
+            <ul>
+                <p>Hover over the bar to see income and IMDb rating Green is over 8 and Red is under 8</p>
+                <li>If we look at the genre, we can see action, adventure, sci-fi movies make the most money</li>
+                <li>We can further deduce that user scores and genre have more weight on gross earnings</li>
+                <li>It also seems like comedy is up there too with action and sci-fi, which also had better user reviews</li>
+            </ul>
+        </div>
+    </div>
+    <div class="tooltip"></div>
+
+    <div class="bottom-banner">
+        <button onclick="location.href='page1.html'">Prev</button>
+        <button onclick="location.href='page3.html'">Next</button>
+    </div>
+
+    <script src="js/page2.js"></script>
+</body>
+</html>
